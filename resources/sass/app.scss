@@ -125,3 +125,39 @@ body {
         }
     }
 }
+
+#comics_wrapper {
+    background-color: $dc-dark;
+    width: 100vw;
+    .jumbotron {
+        background-image: url('../img/jumbotron.jpg');
+        height: 400px;
+        width: 100vw;
+        background-size: cover;
+    }
+    #comics {
+        #comic {
+            color: $dc-white;
+            text-transform: uppercase;
+            p {
+                margin: 0;
+                font-size: 1.2rem;
+                font-weight: normal;
+            }
+        }
+    }
+    #merchandising {
+        background-color: $dc-blue;
+        width: 100vw;
+        height: 130px;
+        .col {
+            img {
+                height: 75px;
+            }
+            p {
+                color: $dc-white;
+                font-size: 11px;
+            }
+        }
+    }
+}

@@ -21,7 +21,7 @@
             <nav id="main_menu">
                 <ul class="list-unstyled d-flex ">
                     @foreach(config('db.menu') as $item)
-                        <li class="px-3"><a href="#">{{ $item['text'] }}</a></li>
+                        <li class="px-3"><a href="{{ $item['href'] }}">{{ $item['text'] }}</a></li>
                     @endforeach
                 </ul>
             </nav>

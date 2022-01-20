@@ -3,14 +3,13 @@
 
 @section('content')
     <div id="comic">
-
+    <div class="container">
         <div class="poster">
             <img src="{{$comic['thumb']}}" alt="">
         </div>
         <!-- /.poster -->
                
         <div id="comic_info">
-            <div class="container">
                 <div class="row">
                     <div class="col-8">
                         <div id="title">

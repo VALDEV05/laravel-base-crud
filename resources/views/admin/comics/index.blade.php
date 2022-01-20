@@ -25,7 +25,7 @@
                     <td>{{$comic->price}}</td>
                     <td>{{$comic->sale_date}}</td>
                     <td>
-                        <a class="text-uppercase btn btn-primary" href="{{route('admin.comics.show')}}">view </a>
+                        <a class="text-uppercase btn btn-primary" href="{{route('admin.comics.show', $comic->id)}}">view </a>
                         <a class="text-uppercase btn btn-secondary" href="#"> edit </a>
                         <a class="text-uppercase btn btn-danger" href="#"> delete </a>
                     </td>

@@ -24,7 +24,7 @@ Route::get('/comics/{comic}', 'ComicController@show')->name('comic');
 
 
 Route::get('/admin/comics', 'Admin\ComicController@index')->name('admin.comics');
-Route::get('/admin/comics/{comic}', 'Admin\ComicController@show')->name('admin.comics.comic');
+Route::get('/admin/comics/{comic}', 'Admin\ComicController@show')->name('admin.comics.show');
 
 
 

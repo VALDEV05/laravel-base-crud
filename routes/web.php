@@ -23,6 +23,23 @@ Route::get('/comics', 'ComicController@index')->name('comics');
 Route::get('/comics/{comic}', 'ComicController@show')->name('comic');
 
 
+Route::get('/admin', 'Admin\ComicController@index');
+/* Route::get('posts/create', 'Admin\PostController@create');
+Route::post('posts', 'Admin\PostController@store');
+Route::get('posts/{post}', 'Admin\PostController@show');
+Route::get('posts/{post}/edit', 'AdminnPostController@edit');
+Route::put('posts/{post}', 'Admin\PostController@update');
+Route::delete('posts/{post}', 'Admin\PostController@destroy'); */
+
+
+
+
+
+
+
+
+
+
 Route::get('/characters', function () {
 
     return view('characters.index');

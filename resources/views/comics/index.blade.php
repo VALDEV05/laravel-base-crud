@@ -8,14 +8,14 @@
         <div id="comics" class="container row m-auto py-3">
             @foreach($comics as $comic)
                 <div class="col-2 mt-4">
-                    <a href="{{route('comic', $comic->id)}}">
-                       <div id="comic">
-                            <div class="poster">
-                                <img src="{{$comic['thumb']}}" alt="{{$comic['title']}} poster">
-                            </div>
-                            <p class="my-4">{{$comic['series']}}</p>
+                    <div id="comic">
+                           <a href="{{route('comic', $comic->id)}}">
+                                <div class="poster">
+                                    <img src="{{$comic['thumb']}}" alt="{{$comic['title']}} poster">
+                                </div>
+                            </a>
+                            <p class="my-4 text-decoration-none">{{$comic['series']}}</p>
                         </div> 
-                    </a>
                 <!-- /comic-->
                 </div>
             @endforeach

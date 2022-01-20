@@ -2,10 +2,16 @@
 
 
 @section('content')
-    <div id="comic">
+    <div id="comic" class="admin">
     <div class="container">
         <div class="poster">
             <img src="{{$comic['thumb']}}" alt="">
+            <a href="{{route('admin.comics')}}">
+                <div class="cross">
+                    <i class="fa fa-times-circle"></i>
+                </div>
+            </a>
+            
         </div>
         <!-- /.poster -->
                

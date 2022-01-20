@@ -237,6 +237,28 @@ body {
     }
 }
 
+#comic.admin {
+    .poster {
+        position: relative;
+        .cross {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 50px;
+            width: 50px;
+            i {
+                font-size: 50px;
+                color: $dc-blue;
+            }
+            border-radius: 25px;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
 #merchandising {
     background-color: $dc-blue;
     width: 100vw;

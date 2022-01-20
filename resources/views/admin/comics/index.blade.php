@@ -14,6 +14,7 @@
                     <th>Title</th>
                     <th>Price</th>
                     <th>Sale Date</th>
+                    <th>Actions</th>
 
                 </tr>
             </thead>

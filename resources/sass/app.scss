@@ -161,3 +161,93 @@ body {
         }
     }
 }
+
+#comic {
+    width: 100vw;
+    #jumbo_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        #jumbotron {
+            background-image: url('../img/jumbotron.jpg');
+            height: 400px;
+            width: 100vw;
+            background-size: cover;
+        }
+        .banner {
+            height: 100px;
+            width: 100vw;
+            background-color: $dc-blue;
+        }
+        .container {
+            position: absolute;
+            height: 500px;
+            #poster_wrap {
+                position: relative;
+                height: 500px;
+                width: 100%;
+                .poster {
+                    position: absolute;
+                    bottom: 3%;
+                    left: 3%;
+                }
+            }
+        }
+    }
+    #comic_info {
+        margin-top: 40px;
+        width: 100vw;
+        height: 500px;
+        background-color: $dc-white;
+        #title {
+            color: $dc-blue-dark;
+        }
+        #info {
+            height: 60px;
+            width: 100%;
+            display: flex;
+            background-color: $dc-green;
+            color: $dc-white;
+            #price {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 30px;
+                width: 70%;
+                .status {
+                    opacity: .5;
+                }
+            }
+            #availability {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 30%;
+                border-left: 1px solid black;
+                i {
+                    padding-left: 15px;
+                }
+            }
+        }
+        #description {
+            margin: 15px;
+        }
+    }
+}
+
+#merchandising {
+    background-color: $dc-blue;
+    width: 100vw;
+    height: 130px;
+    .col {
+        img {
+            height: 75px;
+        }
+        p {
+            color: $dc-white;
+            font-size: 11px;
+        }
+    }
+}

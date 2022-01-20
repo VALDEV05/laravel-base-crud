@@ -11379,3 +11379,91 @@ body {
   color: #ffffff;
   font-size: 11px;
 }
+
+#comic {
+  width: 100vw;
+}
+#comic #jumbo_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#comic #jumbo_wrap #jumbotron {
+  background-image: url("../img/jumbotron.jpg");
+  height: 400px;
+  width: 100vw;
+  background-size: cover;
+}
+#comic #jumbo_wrap .banner {
+  height: 100px;
+  width: 100vw;
+  background-color: #0282F9;
+}
+#comic #jumbo_wrap .container {
+  position: absolute;
+  height: 500px;
+}
+#comic #jumbo_wrap .container #poster_wrap {
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
+#comic #jumbo_wrap .container #poster_wrap .poster {
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+}
+#comic #comic_info {
+  margin-top: 40px;
+  width: 100vw;
+  height: 500px;
+  background-color: #ffffff;
+}
+#comic #comic_info #title {
+  color: #003F5E;
+}
+#comic #comic_info #info {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  background-color: #55BA59;
+  color: #ffffff;
+}
+#comic #comic_info #info #price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  width: 70%;
+}
+#comic #comic_info #info #price .status {
+  opacity: 0.5;
+}
+#comic #comic_info #info #availability {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  border-left: 1px solid black;
+}
+#comic #comic_info #info #availability i {
+  padding-left: 15px;
+}
+#comic #comic_info #description {
+  margin: 15px;
+}
+
+#merchandising {
+  background-color: #0282F9;
+  width: 100vw;
+  height: 130px;
+}
+#merchandising .col img {
+  height: 75px;
+}
+#merchandising .col p {
+  color: #ffffff;
+  font-size: 11px;
+}

@@ -8,32 +8,35 @@
         </div>
 
        <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Title</th>
-                <th>Price</th>
-                <th>Sale Date</th>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Sale Date</th>
 
-            </tr>
-        </thead>
-        <tbody>
-            @foreach($comics as $comic)
-            <tr>
-                <td scope="row">{{$comic->id}}</td>
-                <td>{{$comic->title}}</td>
-                <td>{{$comic->price}}</td>
-                <td>{{$comic->sale_date}}</td>
-                <td>
-                    <a class="text-uppercase btn btn-primary" href="#">view </a>
-                    <a class="text-uppercase btn btn-secondary" href="#"> edit </a>
-                    <a class="text-uppercase btn btn-danger" href="#"> delete </a>
-                </td>
-            </tr>
-            @endforeach
+                </tr>
+            </thead>
+            <tbody>
+                @foreach($comics as $comic)
+                <tr>
+                    <td scope="row">{{$comic->id}}</td>
+                    <td>{{$comic->title}}</td>
+                    <td>{{$comic->price}}</td>
+                    <td>{{$comic->sale_date}}</td>
+                    <td>
+                        <a class="text-uppercase btn btn-primary" href="{{route('admin.comics.show')}}">view </a>
+                        <a class="text-uppercase btn btn-secondary" href="#"> edit </a>
+                        <a class="text-uppercase btn btn-danger" href="#"> delete </a>
+                    </td>
+                </tr>
+                @endforeach
 
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+        <div id="pagination" class="d-flex justify-content-center">
+            {{$comics->links()}}
+        </div>
     </div>
     
     

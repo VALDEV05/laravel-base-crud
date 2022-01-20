@@ -5,6 +5,12 @@ body {
     font-family: $dc-font-family;
 }
 
+.clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 #site_header {
     #topnav {
         height: 40px;
@@ -270,6 +276,23 @@ body {
         p {
             color: $dc-white;
             font-size: 11px;
+        }
+    }
+}
+
+.card.vision {
+    #actions {
+        i {
+            color: $dc-grey;
+            &:first-child:hover {
+                color: $dc-blue;
+            }
+            &:hover {
+                color: $dc-green;
+            }
+            &:last-child:hover {
+                color: red;
+            }
         }
     }
 }

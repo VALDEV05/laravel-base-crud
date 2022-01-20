@@ -24,6 +24,8 @@ Route::get('/comics/{comic}', 'ComicController@show')->name('comic');
 
 
 Route::get('/admin/comics', 'Admin\ComicController@index')->name('admin.comics');
+Route::get('/admin/comics/create', 'Admin\ComicController@create')->name('admin.comics.create');
+Route::post('/admin/comics', 'Admin\ComicController@store')->name('admin.comics.store');
 Route::get('/admin/comics/{comic}', 'Admin\ComicController@show')->name('admin.comics.show');
 
 

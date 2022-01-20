@@ -11247,6 +11247,12 @@ body {
   font-family: "Open Sans Condensed", sans-serif;
 }
 
+.clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 #site_header #topnav {
   height: 40px;
   background-color: #0282F9;
@@ -11486,4 +11492,17 @@ body {
 #merchandising .col p {
   color: #ffffff;
   font-size: 11px;
+}
+
+.card.vision #actions i {
+  color: #404040;
+}
+.card.vision #actions i:first-child:hover {
+  color: #0282F9;
+}
+.card.vision #actions i:hover {
+  color: #55BA59;
+}
+.card.vision #actions i:last-child:hover {
+  color: red;
 }

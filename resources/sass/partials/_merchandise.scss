@@ -1,0 +1,14 @@
+#merchandising {
+    background-color: $dc-blue;
+    width: 100vw;
+    height: 130px;
+    .col {
+        img {
+            height: 75px;
+        }
+        p {
+            color: $dc-white;
+            font-size: 11px;
+        }
+    }
+}

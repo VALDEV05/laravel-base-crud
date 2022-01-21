@@ -1,0 +1,30 @@
+body.admin {
+    width: 100vw;
+    display: flex;
+    min-height: 100vh;
+    #site_admin_header {
+        width: 15%;
+        background-color: $dc-grey-dark;
+        aside {
+            ul {
+                li {
+                    a {
+                        &:hover {
+                            color: $dc-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #site_main {
+        .container {
+            height: 100%;
+            #pagination {
+                margin-top: 20px;
+            }
+        }
+        width: 85%;
+        background-color: $dc-grey;
+    }
+}

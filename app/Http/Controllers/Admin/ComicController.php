@@ -38,7 +38,20 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        $new_comic = new Comic();
+         $validated_data = $request->validate([
+            'title' => 'required|unique:comics|max:255',
+            'description' => 'required',
+            'thumb' => 'required',
+            'price' => 'required',
+            'series' => 'required',
+            'sale_date' => 'required',
+            'type' => 'required',
+        ]);
+
+            Comic::create($validated_data);
+            return redirect()->route('admin.comics');
+       /*  $new_cozoom
+       mic = new Comic();
         $new_comic->title = $request->title;
         $new_comic->description = $request->description;
         $new_comic->thumb = $request->thumb;
@@ -48,7 +61,7 @@ class ComicController extends Controller
         $new_comic->type = $request->type;
         $new_comic->save();
 
-        return redirect()->route('admin.comics');
+        return redirect()->route('admin.comics'); */
     }
     /**
      * Display the specified resource.

@@ -1,135 +1,16 @@
 //
 @use 'bootstrap';
+
+/* admin */
+
 @import 'common/variables';
+@import 'partials/admin/sidebar';
+@import 'partials/merchandise';
+@import 'partials/siteheader';
+@import 'partials/sitefooter';
+@import 'partials/comic';
 body {
     font-family: $dc-font-family;
-}
-
-.clamp {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-#site_header {
-    #topnav {
-        height: 40px;
-        background-color: $dc-blue;
-        font-size: 0.8rem;
-        nav {
-            a {
-                color: $dc-white;
-            }
-        }
-    }
-    #menu_wrapper {
-        background-color: $dc-white;
-        .logo {
-            img {
-                height: 65px;
-                width: auto;
-            }
-        }
-        #main_menu {
-            ul {
-                li {
-                    a {
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-weight: bold;
-                        color: $dc-grey;
-                        &.active {
-                            border-bottom: 3px solid $dc-blue;
-                            color: $dc-blue;
-                            padding-bottom: 25px;
-                            /* aggiungere dinamicamente la classe */
-                        }
-                    }
-                }
-            }
-        }
-    }
-    #search {
-        width: 150px;
-        border-bottom: 2px solid $dc-blue;
-        .input-group-text {
-            background-color: transparent;
-            border: none;
-        }
-    }
-}
-
-#site_footer {
-    .jumbofooter {
-        background-image: url('../img/footer-bg.jpg');
-        height: 410px;
-        width: 100vw;
-        background-size: cover;
-        .col-6 {
-            .footer_menu {
-                padding-top: 30px;
-                h3 {
-                    color: white;
-                    font-size: 20px;
-                    font-weight: 700;
-                }
-                ul {
-                    padding-left: 0;
-                    li a {
-                        text-decoration: none;
-                        color: $dc-light-grey;
-                        font-weight: 300;
-                    }
-                }
-                p {
-                    font-weight: 300;
-                    color: $dc-light-grey;
-                    span {
-                        a {
-                            text-decoration: none;
-                            color: $dc-blue;
-                        }
-                    }
-                }
-            }
-        }
-        .logo-dc {
-            background-image: url("../img/dc-logo-bg.png");
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-    }
-    #signup {
-        background-color: $dc-dark;
-        height: 100px;
-        width: 100vw;
-        .btn-signup {
-            text-transform: uppercase;
-            padding: 10px 30px;
-            border: 2px solid $dc-blue;
-            a {
-                color: white;
-                text-decoration: none;
-            }
-        }
-        .social {
-            h5 {
-                font-weight: 700;
-                color: $dc-blue;
-            }
-            .socials-logo {
-                height: 50px;
-                width: 300px;
-                col {
-                    padding: 0px;
-                    img {
-                        height: 40px;
-                        width: 40px;
-                    }
-                }
-            }
-        }
-    }
 }
 
 #comics_wrapper {
@@ -140,31 +21,6 @@ body {
         height: 400px;
         width: 100vw;
         background-size: cover;
-    }
-    #comics {
-        #comic {
-            color: $dc-white;
-            text-transform: uppercase;
-            p {
-                margin: 0;
-                font-size: 1.2rem;
-                font-weight: normal;
-            }
-        }
-    }
-    #merchandising {
-        background-color: $dc-blue;
-        width: 100vw;
-        height: 130px;
-        .col {
-            img {
-                height: 75px;
-            }
-            p {
-                color: $dc-white;
-                font-size: 11px;
-            }
-        }
     }
 }
 
@@ -261,21 +117,6 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-    }
-}
-
-#merchandising {
-    background-color: $dc-blue;
-    width: 100vw;
-    height: 130px;
-    .col {
-        img {
-            height: 75px;
-        }
-        p {
-            color: $dc-white;
-            font-size: 11px;
         }
     }
 }

@@ -11243,14 +11243,47 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-  font-family: "Open Sans Condensed", sans-serif;
-}
-
+/* admin */
 .clamp {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+body.admin {
+  width: 100vw;
+  display: flex;
+  min-height: 100vh;
+}
+body.admin #site_admin_header {
+  width: 15%;
+  background-color: #303030;
+}
+body.admin #site_admin_header aside ul li a:hover {
+  color: #ffffff;
+}
+body.admin #site_main {
+  width: 85%;
+  background-color: #404040;
+}
+body.admin #site_main .container {
+  height: 100%;
+}
+body.admin #site_main .container #pagination {
+  margin-top: 20px;
+}
+
+#merchandising {
+  background-color: #0282F9;
+  width: 100vw;
+  height: 130px;
+}
+#merchandising .col img {
+  height: 75px;
+}
+#merchandising .col p {
+  color: #ffffff;
+  font-size: 11px;
 }
 
 #site_header #topnav {
@@ -11354,6 +11387,30 @@ body {
   width: 40px;
 }
 
+.comic {
+  color: #ffffff;
+  margin: 1rem 0.5rem;
+  width: calc(16.6666666667% - 1rem);
+}
+.comic .poster img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.comic p {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  text-align: center;
+  margin: 10px 0;
+}
+
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
 #comics_wrapper {
   background-color: #1C1C1C;
   width: 100vw;
@@ -11363,27 +11420,6 @@ body {
   height: 400px;
   width: 100vw;
   background-size: cover;
-}
-#comics_wrapper #comics #comic {
-  color: #ffffff;
-  text-transform: uppercase;
-}
-#comics_wrapper #comics #comic p {
-  margin: 0;
-  font-size: 1.2rem;
-  font-weight: normal;
-}
-#comics_wrapper #merchandising {
-  background-color: #0282F9;
-  width: 100vw;
-  height: 130px;
-}
-#comics_wrapper #merchandising .col img {
-  height: 75px;
-}
-#comics_wrapper #merchandising .col p {
-  color: #ffffff;
-  font-size: 11px;
 }
 
 #comic {
@@ -11479,19 +11515,6 @@ body {
 #comic.admin .poster .cross i {
   font-size: 50px;
   color: #0282F9;
-}
-
-#merchandising {
-  background-color: #0282F9;
-  width: 100vw;
-  height: 130px;
-}
-#merchandising .col img {
-  height: 75px;
-}
-#merchandising .col p {
-  color: #ffffff;
-  font-size: 11px;
 }
 
 .card.vision #actions i {

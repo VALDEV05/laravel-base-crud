@@ -8,3 +8,8 @@ $dc-light-grey: #d6cfb7;
 $dc-white: #ffffff;
 $dc-font-family:'Open Sans Condensed',
 sans-serif;
+.clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

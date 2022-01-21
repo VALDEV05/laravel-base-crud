@@ -1,0 +1,47 @@
+#site_header {
+    #topnav {
+        height: 40px;
+        background-color: $dc-blue;
+        font-size: 0.8rem;
+        nav {
+            a {
+                color: $dc-white;
+            }
+        }
+    }
+    #menu_wrapper {
+        background-color: $dc-white;
+        .logo {
+            img {
+                height: 65px;
+                width: auto;
+            }
+        }
+        #main_menu {
+            ul {
+                li {
+                    a {
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-weight: bold;
+                        color: $dc-grey;
+                        &.active {
+                            border-bottom: 3px solid $dc-blue;
+                            color: $dc-blue;
+                            padding-bottom: 25px;
+                            /* aggiungere dinamicamente la classe */
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #search {
+        width: 150px;
+        border-bottom: 2px solid $dc-blue;
+        .input-group-text {
+            background-color: transparent;
+            border: none;
+        }
+    }
+}

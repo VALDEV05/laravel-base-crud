@@ -2,7 +2,6 @@
     <div id="topnav" class="d-flex align-items-center">
         <div class="container">
             <nav class="nav justify-content-end">
-                <a class="text-decoration-none text-uppercase fw-bold me-5 d-flex align-items-center" href="{{route('comics')}}">Guest <i class="ms-2 fas fa-users"></i></a>
                 <a class="text-decoration-none text-uppercase fw-bold me-5 d-flex align-items-center" href="{{route('admin.comics')}}">Admin <i class="ms-2 fas fa-user-shield"></i></a>
                 <a class="text-decoration-none text-uppercase fw-bold me-5 d-flex align-items-center" href="#">DC power visa <i class="far fa-registered"></i></a>
                 <a class="text-decoration-none text-uppercase fw-bold d-flex align-items-center" href="#">Additional dc sites <i class="fas fa-sort-down" style="margin-bottom: 10px; padding-left: 5px;"></i></a>

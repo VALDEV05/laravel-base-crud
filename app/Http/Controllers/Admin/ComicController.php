@@ -84,12 +84,8 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
-        // Validate your DATA!!
         $validated_data = $request->validate([
-            'title' => [
-                'required',
-                Rule::unique('comics')->ignore($comic->id),
-            ],
+            'title' => ['required', Rule::unique('comics')->ignore($comic->id),],
             'description' => ['required'],
             'thumb' => ['required'],
             'price' => ['required'],
@@ -109,8 +105,9 @@ class ComicController extends Controller
      * @param  \App\Models\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy( Comic $comic)
     {
-        //
+        $comic->delete();
+        return redirect()->route('admin.comics')->with('message', '😱 Hai rimosso un comic per sempre!!');;
     }
 }

@@ -2,6 +2,12 @@
 
 
 @section('content')
+    @if (session('message'))
+        <div class="alert alert-success">
+            {{ session('message') }}
+        </div>
+    @endif
+
     <div class="container">
         <div class="heading d-flex justify-content-between">
             <h1 class="text-uppercase"><i class="fas fa-user-shield"></i> Admin Vision <i class="fas fa-user-shield"></i></h1>
@@ -29,7 +35,9 @@
                                 <a href="{{route('admin.comics.edit', $comic->id)}}">
                                     <i class=" mx-4 fa fa-edit"></i>
                                 </a>
-                                <i class="fa fa-trash"></i>
+                                <a class="text-danger" href="{{route('admin.comics.delete', $comic->id)}}">
+                                    <i class="fa fa-trash"></i>
+                                </a>
                             </li>
                         </ul>
                     </div>

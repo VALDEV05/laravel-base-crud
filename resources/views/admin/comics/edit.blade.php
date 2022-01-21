@@ -4,7 +4,12 @@
 @section('content')
     <div id="edit_admin">
         <div class="container mt-2">
-            <h1 class="text-center text-uppercase"><i class="fas fa-user-edit pe-1"></i>edit here <i class="fas fa-user-edit ps-1"></i></h1>
+            <div class="title d-flex">
+                <h1 class="text-center text-uppercase"><i class="fas fa-user-edit pe-1"></i>edit here <i class="fas fa-user-edit ps-1"></i></h1>
+                <div class="cross">
+                    <i class="fa fa-times-circle" aria-hidden="true"></i>
+                </div>
+            </div>
             
             @if ($errors->any())
                 <div class="alert alert-danger">

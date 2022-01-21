@@ -11251,7 +11251,7 @@ textarea.form-control-lg {
 }
 
 body.admin {
-  width: 100vw;
+  max-width: 100vw;
   display: flex;
   min-height: 100vh;
 }
@@ -11271,6 +11271,19 @@ body.admin #site_main .container {
 }
 body.admin #site_main .container #pagination {
   margin-top: 20px;
+}
+body.admin #site_main #show_admin .container {
+  background-color: #0282F9;
+  height: 100vh;
+  width: 100%;
+}
+body.admin #site_main #show_admin .container .title {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+body.admin #site_main #show_admin .container .description .desc {
+  width: 70%;
 }
 
 #merchandising {

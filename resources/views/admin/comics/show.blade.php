@@ -30,7 +30,7 @@
                  <a class="text-decoration-none text-uppercase text-light fw-bold d-flex align-items-center" href="{{route('admin.comics')}}">Close View <i class="ms-2 fas fa-times"></i></a>
             </button>
             <button class=" mx-4 btn btn-warning">
-                <a class="text-decoration-none text-uppercase text-light fw-bold d-flex align-items-center" href="#">Edit View <i class="ms-2 fas fa-user-edit"></i></a>
+                <a class="text-decoration-none text-uppercase text-light fw-bold d-flex align-items-center" href="{{route('admin.comics.edit')}}">Edit View <i class="ms-2 fas fa-user-edit"></i></a>
             </button>
             <button class=" mx-4 btn btn-danger">
                 <a class="text-decoration-none text-uppercase text-light fw-bold d-flex align-items-center shadow-lg" href="#">Delete View <i class="ms-2 fas fa-trash"></i></a>

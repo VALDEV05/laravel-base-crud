@@ -26,7 +26,9 @@
                                 <a href="{{route('admin.comics.show', $comic->id)}}">
                                     <i class="fa fa-eye"></i>
                                 </a>
-                                <i class=" mx-4 fa fa-edit"></i>
+                                <a href="{{route('admin.comics.edit', $comic->id)}}">
+                                    <i class=" mx-4 fa fa-edit"></i>
+                                </a>
                                 <i class="fa fa-trash"></i>
                             </li>
                         </ul>

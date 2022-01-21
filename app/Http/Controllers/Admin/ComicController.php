@@ -6,6 +6,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Comic;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
+
 
 class ComicController extends Controller
 {
@@ -65,30 +67,46 @@ class ComicController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Comic $comic)
     {
-        //
+        return view('admin.comics.edit', compact('comic'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Comic $comic)
     {
-        //
+        // Validate your DATA!!
+        $validated_data = $request->validate([
+            'title' => [
+                'required',
+                Rule::unique('comics')->ignore($comic->id),
+            ],
+            'description' => ['required'],
+            'thumb' => ['required'],
+            'price' => ['required'],
+            'series' => ['required'],
+            'sale_date' => ['required'],
+            'type' => ['required'],
+        ]);
+        //ddd($comic, $request->all());
+        $comic->update($validated_data);
+
+        return redirect()->route('admin.comics')->with('message', '🥳 Complimenti hai modificato il comic');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\Comic  $comic
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)

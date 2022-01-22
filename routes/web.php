@@ -44,11 +44,7 @@ Route::get('/characters', function () {
 
 })->name('characters');
 
-Route::get('/movies', function () {
-
-    return view('movies.index');
-
-})->name('movies');
+Route::get('/movies', 'MovieController@index')->name('movies');
 
 Route::get('/tv', function () {
     return view('tv.index');

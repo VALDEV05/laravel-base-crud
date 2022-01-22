@@ -11546,6 +11546,59 @@ body {
   margin: 15px;
 }
 
+#movie {
+  width: 100vw;
+}
+#movie #jumbo_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#movie #jumbo_wrap #jumbotron {
+  background-image: url("../img/jumbotron.jpg");
+  height: 400px;
+  width: 100vw;
+  background-size: cover;
+}
+#movie #jumbo_wrap .banner {
+  height: 100px;
+  width: 100vw;
+  background-color: #0282F9;
+}
+#movie #jumbo_wrap .container {
+  position: absolute;
+  height: 500px;
+}
+#movie #jumbo_wrap .container #poster_wrap {
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
+#movie #jumbo_wrap .container #poster_wrap .poster {
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+}
+#movie #jumbo_wrap .container #poster_wrap .poster img {
+  height: 300px;
+  width: auto;
+}
+#movie #movie_info {
+  margin-top: 40px;
+  width: 100vw;
+  height: 500px;
+  background-color: #ffffff;
+}
+#movie #movie_info #title {
+  color: #003F5E;
+}
+#movie #movie_info #description {
+  margin: 15px;
+  margin-left: 0;
+}
+
 #comic.admin .poster {
   position: relative;
 }

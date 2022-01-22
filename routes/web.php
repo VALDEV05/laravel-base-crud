@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('guest.home');
 })->name('home');
 
 
@@ -23,8 +23,8 @@ Route::get('/', function () {
 
 
 
-Route::get('/comics', 'ComicController@index')->name('comics');
-Route::get('/comics/{comic}', 'ComicController@show')->name('comic');
+Route::get('/comics', 'Guest\ComicController@index')->name('comics');
+Route::get('/comics/{comic}', 'Guest\ComicController@show')->name('comic');
 
 
 
@@ -50,7 +50,7 @@ Route::delete('/admin/comics/{comic}', 'Admin\ComicController@destroy')->name('a
 
 Route::get('/characters', function () {
 
-    return view('characters.index');
+    return view('guest.characters.index');
 
 })->name('characters');
 
@@ -62,8 +62,8 @@ Route::get('/characters', function () {
 
 
 /* Route Guest Movies */
-Route::get('/movies', 'MovieController@index')->name('movies');
-Route::get('/movies/{movie}', 'MovieController@show')->name('movie');
+Route::get('/movies', 'Guest\MovieController@index')->name('movies');
+Route::get('/movies/{movie}', 'Guest\MovieController@show')->name('movie');
 
 
 
@@ -76,41 +76,41 @@ Route::get('/movies/{movie}', 'MovieController@show')->name('movie');
 
 
 Route::get('/tv', function () {
-    return view('tv.index');
+    return view('guest.tv.index');
 })->name('tv');
 
 Route::get('/games', function () {
 
-    return view('games.index');
+    return view('guest.games.index');
 
 })->name('games');
 
 Route::get('/collectibles', function () {
 
-    return view('collectibles.index');
+    return view('guest.collectibles.index');
 
 })->name('collectibles');
 
 Route::get('/videos', function () {
 
-    return view('videos.index');
+    return view('guest.videos.index');
 
 })->name('videos');
 
 Route::get('/fans', function () {
 
-    return view('fans.index');
+    return view('guest.fans.index');
 
 })->name('fans');
 
 Route::get('/news', function () {
 
-    return view('news.index'); 
+    return view('guest.news.index'); 
 
 })->name('news');
 
 Route::get('/shop', function () {
     
-   return view('shop.index'); 
+   return view('guest.shop.index'); 
 
 })->name('shop');

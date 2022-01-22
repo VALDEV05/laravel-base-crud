@@ -101,6 +101,59 @@ body {
     }
 }
 
+#movie {
+    width: 100vw;
+    #jumbo_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        #jumbotron {
+            background-image: url('../img/jumbotron.jpg');
+            height: 400px;
+            width: 100vw;
+            background-size: cover;
+        }
+        .banner {
+            height: 100px;
+            width: 100vw;
+            background-color: $dc-blue;
+        }
+        .container {
+            position: absolute;
+            height: 500px;
+            #poster_wrap {
+                position: relative;
+                height: 500px;
+                width: 100%;
+                .poster {
+                    position: absolute;
+                    bottom: 3%;
+                    left: 3%;
+                    img {
+                        height: 300px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+    #movie_info {
+        margin-top: 40px;
+        width: 100vw;
+        height: 500px;
+        background-color: $dc-white;
+        #title {
+            color: $dc-blue-dark;
+        }
+        #description {
+            margin: 15px;
+            margin-left: 0;
+        }
+    }
+}
+
 #comic.admin {
     .poster {
         position: relative;

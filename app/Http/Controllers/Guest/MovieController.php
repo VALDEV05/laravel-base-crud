@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Guest;
 
-use App\Models\Comic;
+use App\Http\Controllers\Controller;
+use App\Models\Movie;
 use Illuminate\Http\Request;
 
-class ComicController extends Controller
+class MovieController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,10 +14,10 @@ class ComicController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {  
-        $comics = Comic::all();
-        //ddd($comics);
-        return view('comics.index', compact('comics'));
+    {   
+        $movies = Movie::all();
+        //ddd($movies);
+        return view('guest.movies.index', compact('movies'));
     }
 
     /**
@@ -43,21 +44,21 @@ class ComicController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Movie  $movie
      * @return \Illuminate\Http\Response
      */
-    public function show(Comic $comic)
+    public function show(Movie $movie)
     {
-        return view('comics.show', compact('comic'));
+        return view('guest.movies.show', compact('movie'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Movie  $movie
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Movie $movie)
     {
         //
     }
@@ -66,10 +67,10 @@ class ComicController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\Movie  $movie
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Movie $movie)
     {
         //
     }
@@ -77,10 +78,10 @@ class ComicController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\Movie  $movie
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Movie $movie)
     {
         //
     }

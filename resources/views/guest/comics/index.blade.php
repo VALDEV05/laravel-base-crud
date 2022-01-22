@@ -12,7 +12,7 @@
                 
             @endforeach
         </div>
-        <!-- /.sectionComics -->
+        <!-- /#comics -->
         @include('partials.merchandise')
         <!-- /#marchandising -->
     </div>

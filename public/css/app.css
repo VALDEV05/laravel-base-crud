@@ -11295,7 +11295,8 @@ body.admin #site_main #create_admin .container .form {
   height: 90%;
   background-color: violet;
 }
-body.admin #site_main #edit_admin .container {
+body.admin #site_main #edit_admin .container,
+body.admin #site_main #create_admin .container {
   color: #0282F9;
 }
 

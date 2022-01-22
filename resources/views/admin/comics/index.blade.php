@@ -9,11 +9,8 @@
     @endif
 
     <div class="container">
-        <div class="heading d-flex justify-content-between">
-            <h1 class="text-uppercase"><i class="fas fa-user-shield"></i> Admin Vision <i class="fas fa-user-shield"></i></h1>
-            <div class="create">
-                <a class="text-uppercase btn btn-primary" href="{{route('admin.comics.create')}}">Create </a>
-            </div>
+        <div class="heading d-flex justify-content-center">
+            <h1 class="text-uppercase py-4"><i class="fas fa-user-shield"></i> Admin Vision <i class="fas fa-user-shield"></i></h1>
         </div>
         <div class="row">
             @foreach ($comics as $comic)

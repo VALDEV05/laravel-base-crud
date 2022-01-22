@@ -55,7 +55,8 @@ body.admin {
                 }
             }
         }
-        #edit_admin {
+        #edit_admin,
+        #create_admin {
             .container {
                 color: $dc-blue;
             }

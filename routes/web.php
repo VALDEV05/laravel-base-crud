@@ -19,9 +19,19 @@ Route::get('/', function () {
 })->name('home');
 
 
+/* Route Guest Comics */
+
+
+
 Route::get('/comics', 'ComicController@index')->name('comics');
 Route::get('/comics/{comic}', 'ComicController@show')->name('comic');
 
+
+
+
+
+
+/* Route Admin Comics */
 
 Route::get('/admin/comics', 'Admin\ComicController@index')->name('admin.comics');
 Route::get('/admin/comics/create', 'Admin\ComicController@create')->name('admin.comics.create');
@@ -44,7 +54,26 @@ Route::get('/characters', function () {
 
 })->name('characters');
 
+
+
+
+
+
+
+
+/* Route Guest Movies */
 Route::get('/movies', 'MovieController@index')->name('movies');
+Route::get('/movies/{movie}', 'MovieController@show')->name('movie');
+
+
+
+
+
+
+
+
+
+
 
 Route::get('/tv', function () {
     return view('tv.index');

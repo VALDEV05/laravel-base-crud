@@ -9,11 +9,13 @@
 @import 'partials/siteheader';
 @import 'partials/sitefooter';
 @import 'partials/comic';
+@import 'partials/movie';
 body {
     font-family: $dc-font-family;
 }
 
-#comics_wrapper {
+#comics_wrapper,
+#movies_wrapper {
     background-color: $dc-dark;
     width: 100vw;
     .jumbotron {

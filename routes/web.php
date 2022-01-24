@@ -70,6 +70,7 @@ Route::get('/admin/movies/create', 'Admin\MovieController@create')->name('admin.
 Route::post('/admin/movies', 'Admin\MovieController@store')->name('admin.movies.store');
 Route::get('/admin/movies/{movie}', 'Admin\MovieController@show')->name('admin.movies.show');
 Route::get('/admin/movies/{movie}/edit', 'Admin\MovieController@edit')->name('admin.movies.edit');
+Route::put('/admin/movies/{movie}', 'Admin\MovieController@update')->name('admin.movies.update');
 
 
 

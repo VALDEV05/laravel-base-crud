@@ -13,8 +13,16 @@
                     </div>
                 </a> --}}
             </div>
-
-            <div id="form" action="{{ route('admin.movies.update', $movie->id) }}" class="mt-5" method="post">
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+            <form id="form" action="{{ route('admin.movies.update', $movie->id) }}" class="mt-5" method="post">
                 @csrf
                 @method('PUT')
 
@@ -22,6 +30,7 @@
                 <div class="mb-1 d-flex flex-column align-items-center">
                     <label for="title" class="form-label fs-3 @error('title') is-invalid @enderror">Title</label>
                     <input type="text" class="form-control w-75" id="title" name="title" placeholder="TYPE HERE" value="{{ $movie->title }}">
+                    <small id="titleHelper" class="text-muted">Add a title for your movie max 200 caratteri</small>
                     @error('title')
                         <div class="alert alert-danger">
                             {{$message}}
@@ -65,7 +74,11 @@
                     @enderror
                 </div>
 
-            </div>
+
+                <div id="btn-form" class="d-flex justify-content-center mt-5">
+                    <button type="submit" class="btn btn-primary text-uppercase" style="padding: 0.55rem 7rem;">Save</button>
+                </div>
+            </form>
         </div>
     </div>
 

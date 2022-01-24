@@ -41,10 +41,10 @@ class MovieController extends Controller
         //ddd($request);
         $validated_data= $request->validate([
             'title' => ['required','unique:movies', 'max:255'],
-            'thumb' =>['nullable'],
+            'thumb' =>['required'],
             'description' => ['required'],
-            'directors' =>['nullable'],
-            'writers' =>['nullable'],
+            'directors' =>['required'],
+            'writers' =>['required'],
 
         ]);
 
@@ -82,9 +82,19 @@ class MovieController extends Controller
      * @param  \App\Models\Movie  $movie
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Movie $movie)
     {
-        //
+        //ddd($request->all());
+        $validated_data= $request->validate([
+            'title' => ['required', 'max:255'],
+            'thumb' =>['required'],
+            'description' => ['required'],
+            'directors' =>['required'],
+            'writers' =>['required'],
+
+        ]);
+        $movie->updated($validated_data);
+        return redirect()->route('admin.movies.index')->with('message', "⚡ Hai modificato il film $movie->title");
     }
 
     /**

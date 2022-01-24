@@ -27,7 +27,7 @@
                                     <a href="{{route('admin.movies.show', $movie->id)}}">
                                         <i class="fa fa-eye"></i>
                                     </a>
-                                    <a href="#{{--route('admin.movies.edit', $movie->id)--}}">
+                                    <a href="{{route('admin.movies.edit', $movie->id)}}">
                                         <i class=" mx-4 fa fa-edit"></i>
                                     </a>
                                     <a class="text-danger" href="#{{--route('admin.movies.delete', $movie->id)--}}">

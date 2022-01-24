@@ -71,6 +71,7 @@ Route::post('/admin/movies', 'Admin\MovieController@store')->name('admin.movies.
 Route::get('/admin/movies/{movie}', 'Admin\MovieController@show')->name('admin.movies.show');
 Route::get('/admin/movies/{movie}/edit', 'Admin\MovieController@edit')->name('admin.movies.edit');
 Route::put('/admin/movies/{movie}', 'Admin\MovieController@update')->name('admin.movies.update');
+Route::delete('/admin/movies/{movie}', 'Admin\MovieController@destroy')->name('admin.movies.destroy');
 
 
 

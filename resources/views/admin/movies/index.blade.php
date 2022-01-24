@@ -30,9 +30,12 @@
                                     <a href="{{route('admin.movies.edit', $movie->id)}}">
                                         <i class=" mx-4 fa fa-edit"></i>
                                     </a>
-                                    <a class="text-danger" href="#{{--route('admin.movies.delete', $movie->id)--}}">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
+                                    <form action="{{ route('admin.movies.destroy', $movie->id) }}" method="post">
+                                        @csrf
+                                        @method("DELETE")
+                                        <button type="submit" style="border: none;padding: 0;margin: 0;width: 10px;display: flex;justify-content: center;align-items: center;"><i class=" mx-4 fa fa-trash text-danger"></i></button>
+                                        
+                                    </form>
                                 </li>
                             </ul>
                         </div>

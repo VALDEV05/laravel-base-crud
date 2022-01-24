@@ -67,6 +67,7 @@ Route::get('/characters', function () {
 /* Route Admin Movies */
 Route::get('/admin/movies', 'Admin\MovieController@index')->name('admin.movies.index');
 Route::get('/admin/movies/create', 'Admin\MovieController@create')->name('admin.movies.create');
+Route::post('/admin/movies', 'Admin\MovieController@store')->name('admin.movies.store');
 Route::get('/admin/movies/{movie}', 'Admin\MovieController@show')->name('admin.movies.show');
 
 

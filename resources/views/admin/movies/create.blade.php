@@ -4,8 +4,7 @@
 @section('content')
     <div id="edit_admin">
         <div class="container mt-2">
-            <div class="title d-flex justify-content-evenly">
-                <p class="mb-0"></p>
+            <div class="title d-flex justify-content-center">
                 <h1 class="text-center text-uppercase"><i class="fas fa-user-edit pe-1"></i>Add new movie <i class="fas fa-user-edit ps-1"></i></h1>
                 {{-- <a href="{{route('admin.comics.index')}}">
                     <div class="cross" style="font-size: 30px">
@@ -24,7 +23,7 @@
                 </div>
             @endif
 
-            <form id="form" class="mt-5" action="{{-- route('admin.movies.store') --}}" method="post">
+            <form id="form" class="mt-5" action="{{ route('admin.movies.store') }}" method="post">
                 @csrf 
 
                 <div class="mb-1 d-flex flex-column align-items-center">

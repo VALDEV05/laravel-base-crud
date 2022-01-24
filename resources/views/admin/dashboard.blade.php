@@ -21,9 +21,9 @@
                     <div class="card">
                         <div class="card-text w-100 text-center pt-3">
                             <h1>
-                                <i class="fas fa-film"></i>
-                                Movie
-                                <i class="fas fa-film"></i>
+                                <i class="fas fa-book"></i>
+                                Comics
+                                <i class="fas fa-book"></i>
                             </h1>
                         </div>
                         <div id="show" class="my-2 d-flex justify-content-center align-items-center">
@@ -39,9 +39,9 @@
                     <div class="card">
                         <div class="card-text w-100 text-center pt-3">
                             <h1>
-                                <i class="fas fa-book"></i>
-                                Comics
-                                <i class="fas fa-book"></i>
+                                <i class="fas fa-film"></i>
+                                Movies
+                                <i class="fas fa-film"></i>
                             </h1>
                         </div>
                         <div id="show" class="my-2 d-flex justify-content-center align-items-center">

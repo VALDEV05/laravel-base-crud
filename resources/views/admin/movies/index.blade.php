@@ -1,7 +1,12 @@
 @extends('layouts.admin')
 
 @section('content')
-
+    @if (session('message'))
+        <div class="alert alert-success">
+            {{ session('message') }}
+        </div>
+        
+    @endif
     <div class="container">
         <div class="heading d-flex justify-content-center">
             <h1 class="text-uppercase py-4"><i class="fas fa-user-shield"></i> Admin Vision <i class="fas fa-user-shield"></i></h1>

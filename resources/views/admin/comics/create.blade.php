@@ -4,14 +4,13 @@
 @section('content')
     <div id="edit_admin">
         <div class="container mt-2">
-            <div class="title d-flex justify-content-evenly">
-                <p class="mb-0"></p>
+            <div class="title d-flex justify-content-center">
                 <h1 class="text-center text-uppercase"><i class="fas fa-user-edit pe-1"></i>Add new comic <i class="fas fa-user-edit ps-1"></i></h1>
-                <a href="{{route('admin.comics.index')}}">
+                {{-- <a href="{{route('admin.comics.index')}}">
                     <div class="cross" style="font-size: 30px">
                         <i class="fa fa-times-circle" aria-hidden="true"></i>
                     </div>
-                </a>
+                </a> --}}
             </div>
             
             @if ($errors->any())

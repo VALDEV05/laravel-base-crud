@@ -38,7 +38,19 @@ class MovieController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //ddd($request);
+        $validated_data= $request->validate([
+            'title' => ['required','unique:movies', 'max:255'],
+            'thumb' =>['nullable'],
+            'description' => ['required'],
+            'directors' =>['nullable'],
+            'writers' =>['nullable'],
+
+        ]);
+
+        Movie::create($validated_data);
+
+        return redirect()->route('admin.movies.index')->with('message', "⚡ Hai aggiunto il film");
     }
 
     /**

@@ -49,7 +49,7 @@ class MovieController extends Controller
      */
     public function show(Movie $movie)
     {
-        //
+        return view('admin.movies.show', compact('movie'));
     }
 
     /**

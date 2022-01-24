@@ -19,7 +19,7 @@
                                 <li class="list-group-item text-center"  style="font-size: .5rem; opacity:.5;">{{$movie['directors']}}</li>
                                 <li class="list-group-item text-center"  style="font-size: .5rem; opacity:.5;">{{$movie['writers']}}</li>
                                 <li id="actions" class="list-group-item text-center d-flex justify-content-center"  style="font-size: .5rem; opacity:.5;">
-                                    <a href="# {{--route('admin.movies.show', $movie->id)--}}">
+                                    <a href="{{route('admin.movies.show', $movie->id)}}">
                                         <i class="fa fa-eye"></i>
                                     </a>
                                     <a href="#{{--route('admin.movies.edit', $movie->id)--}}">

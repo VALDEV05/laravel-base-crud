@@ -41,6 +41,9 @@ Route::get('/admin/comics/{comic}/edit', 'Admin\ComicController@edit')->name('ad
 Route::put('/admin/comics/{comic}', 'Admin\ComicController@update')->name('admin.comics.update');
 Route::delete('/admin/comics/{comic}', 'Admin\ComicController@destroy')->name('admin.comics.delete');
 
+
+
+
 Route::get('/admin/dashboard', function(){
     return view('admin.dashboard');
 })->name('admin.dashboard');
@@ -74,7 +77,6 @@ Route::get('/admin/movies/{movie}', 'Admin\MovieController@show')->name('admin.m
 /* Route Guest Movies */
 Route::get('/movies', 'Guest\MovieController@index')->name('movies');
 Route::get('/movies/{movie}', 'Guest\MovieController@show')->name('movie');
-
 
 
 

@@ -7,7 +7,7 @@
             <div class="title d-flex justify-content-evenly">
                 <p class="mb-0"></p>
                 <h1 class="text-center text-uppercase"><i class="fas fa-user-edit pe-1"></i>edit here <i class="fas fa-user-edit ps-1"></i></h1>
-                <a href="{{route('admin.comics')}}">
+                <a href="{{route('admin.comics.index')}}">
                     <div class="cross" style="font-size: 30px">
                         <i class="fa fa-times-circle" aria-hidden="true"></i>
                     </div>

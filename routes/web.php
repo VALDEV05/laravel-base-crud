@@ -23,8 +23,8 @@ Route::get('/', function () {
 
 
 
-Route::get('/comics', 'Guest\ComicController@index')->name('comics');
-Route::get('/comics/{comic}', 'Guest\ComicController@show')->name('comic');
+Route::get('/comics', 'Guest\ComicController@index')->name('guest.comics.index');
+Route::get('/comics/{comic}', 'Guest\ComicController@show')->name('guest.comic.show');
 
 
 
@@ -33,7 +33,7 @@ Route::get('/comics/{comic}', 'Guest\ComicController@show')->name('comic');
 
 /* Route Admin Comics */
 
-Route::get('/admin/comics', 'Admin\ComicController@index')->name('admin.comics');
+Route::get('/admin/comics', 'Admin\ComicController@index')->name('admin.comics.index');
 Route::get('/admin/comics/create', 'Admin\ComicController@create')->name('admin.comics.create');
 Route::post('/admin/comics', 'Admin\ComicController@store')->name('admin.comics.store');
 Route::get('/admin/comics/{comic}', 'Admin\ComicController@show')->name('admin.comics.show');
@@ -41,7 +41,9 @@ Route::get('/admin/comics/{comic}/edit', 'Admin\ComicController@edit')->name('ad
 Route::put('/admin/comics/{comic}', 'Admin\ComicController@update')->name('admin.comics.update');
 Route::delete('/admin/comics/{comic}', 'Admin\ComicController@destroy')->name('admin.comics.delete');
 
-
+Route::get('/admin/dashboard', function(){
+    return view('admin.dashboard');
+})->name('admin.dashboard');
 
 
 
@@ -55,6 +57,14 @@ Route::get('/characters', function () {
 })->name('characters');
 
 
+
+
+
+
+/* Route Admin Movies */
+Route::get('/admin/movies', 'Admin\MovieController@index')->name('admin.movies.index');
+Route::get('/admin/movies/create', 'Admin\MovieController@create')->name('admin.movies.create');
+Route::get('/admin/movies/{movie}', 'Admin\MovieController@show')->name('admin.movies.show');
 
 
 

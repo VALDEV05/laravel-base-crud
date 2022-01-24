@@ -5,6 +5,7 @@
 
 @import 'common/variables';
 @import 'partials/admin/admin';
+@import 'partials/admin/dashboard';
 @import 'partials/merchandise';
 @import 'partials/siteheader';
 @import 'partials/sitefooter';
@@ -132,7 +133,7 @@ body {
                     bottom: 3%;
                     left: 3%;
                     img {
-                        height: 300px;
+                        height: 250px;
                         width: auto;
                     }
                 }

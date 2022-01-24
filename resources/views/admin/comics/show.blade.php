@@ -27,7 +27,7 @@
         <div id="actions" class=" mt-5 d-flex justify-content-center" >
 
             <button class=" mx-4 btn btn-primary">
-                 <a class="text-decoration-none text-uppercase text-light fw-bold d-flex align-items-center" href="{{route('admin.comics')}}">Close View <i class="ms-2 fas fa-times"></i></a>
+                 <a class="text-decoration-none text-uppercase text-light fw-bold d-flex align-items-center" href="{{route('admin.comics.index')}}">Close View <i class="ms-2 fas fa-times"></i></a>
             </button>
             <button class=" mx-4 btn btn-warning">
                 <a class="text-decoration-none text-uppercase text-light fw-bold d-flex align-items-center" href="{{route('admin.comics.edit', $comic->id)}}">Edit View <i class="ms-2 fas fa-user-edit"></i></a>

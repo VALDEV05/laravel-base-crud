@@ -1,0 +1,14 @@
+#dashboard {
+    .card {
+        background-color: $dc-grey-dark;
+        height: 300px;
+        width: 18rem;
+        border: 1px solid $dc-blue;
+        .card-text {
+            color: $dc-blue;
+        }
+        &:hover {
+            box-shadow: 0 1rem 3rem $dc-blue !important;
+        }
+    }
+}

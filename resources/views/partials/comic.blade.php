@@ -1,5 +1,5 @@
 <div class="comic">
-    <a href="{{ route('comic', $comic->id) }}">
+    <a href="{{ route('guest.comic.show', $comic->id) }}">
         <div class="poster">
             <img src="{{$comic->thumb}}" alt="{{ $comic->title }} poster">
         </div>

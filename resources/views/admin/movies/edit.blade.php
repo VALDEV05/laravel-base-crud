@@ -39,7 +39,7 @@
                 </div>
                 <div class="mb-1 d-flex flex-column align-items-center">
                     <label for="description" class="form-label fs-3 @error('description') is-invalid @enderror">Description</label>
-                    <textarea type="text" class="form-control w-75" id="description" name="description" placeholder="TYPE HERE" value="{{ $movie->description }}"></textarea>
+                    <input type="text" class="form-control w-75" id="description" name="description" placeholder="TYPE HERE" value="{{ $movie->description }}">
                     @error('description')
                         <div class="alert alert-danger">
                             {{$message}}
